@@ -18,13 +18,13 @@ public class EnnemyMovement : MonoBehaviour
     }
 
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
             Destroy(gameObject);
-            ScoreScript.scoreCount += 10;
-
+            ScoreScript.scoreCount += 25;
+            Destroy(other.gameObject);
         }
     }
 }
