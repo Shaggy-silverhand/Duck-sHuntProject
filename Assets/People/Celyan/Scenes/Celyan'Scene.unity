@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 21588750}
   - component: {fileID: 21588749}
   - component: {fileID: 21588748}
+  - component: {fileID: 21588753}
   m_Layer: 0
   m_Name: Dingo (2)
   m_TagString: Ennemy
@@ -266,6 +267,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21588746}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &21588753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21588746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerVie: {fileID: 0}
 --- !u!1 &53390610
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,6 +295,7 @@ GameObject:
   - component: {fileID: 53390614}
   - component: {fileID: 53390613}
   - component: {fileID: 53390612}
+  - component: {fileID: 53390617}
   m_Layer: 0
   m_Name: Mistic (1)
   m_TagString: Ennemy
@@ -412,6 +428,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 53390610}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &53390617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53390610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerVie: {fileID: 0}
 --- !u!1 &68597621
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,6 +456,7 @@ GameObject:
   - component: {fileID: 68597623}
   - component: {fileID: 68597626}
   - component: {fileID: 68597627}
+  - component: {fileID: 68597628}
   m_Layer: 0
   m_Name: Dingo
   m_TagString: Ennemy
@@ -558,6 +589,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &68597628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68597621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerVie: {fileID: 0}
 --- !u!1 &134670682
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,7 +1003,7 @@ GameObject:
   - component: {fileID: 269823426}
   - component: {fileID: 269823425}
   m_Layer: 0
-  m_Name: RawImage (1)
+  m_Name: Vie1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1061,7 +1106,7 @@ GameObject:
   - component: {fileID: 386996251}
   - component: {fileID: 386996250}
   m_Layer: 0
-  m_Name: RawImage (2)
+  m_Name: Vie2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1238,7 +1283,7 @@ GameObject:
   - component: {fileID: 474050379}
   - component: {fileID: 474050378}
   m_Layer: 0
-  m_Name: RawImage
+  m_Name: Crosshair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1960,6 +2005,7 @@ GameObject:
   - component: {fileID: 777480598}
   - component: {fileID: 777480599}
   - component: {fileID: 777480600}
+  - component: {fileID: 777480601}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2127,6 +2173,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0.000000059604645, z: 0}
+--- !u!114 &777480601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777480592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c641fa8623554b344a7eca1442349f65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Heart:
+  - {fileID: 269823423}
+  - {fileID: 386996248}
+  - {fileID: 967414486}
+  maxHealth: 3
+  health: 0
 --- !u!1 &808297256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,7 +2473,7 @@ GameObject:
   - component: {fileID: 967414489}
   - component: {fileID: 967414488}
   m_Layer: 0
-  m_Name: RawImage (3)
+  m_Name: Vie3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2763,6 +2827,7 @@ GameObject:
   - component: {fileID: 1042764948}
   - component: {fileID: 1042764947}
   - component: {fileID: 1042764946}
+  - component: {fileID: 1042764952}
   m_Layer: 0
   m_Name: Mistic (2)
   m_TagString: Ennemy
@@ -2895,6 +2960,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 693579252}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1042764952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042764945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerVie: {fileID: 0}
 --- !u!1 &1091229458
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,6 +3365,7 @@ GameObject:
   - component: {fileID: 1397349962}
   - component: {fileID: 1397349965}
   - component: {fileID: 1397349966}
+  - component: {fileID: 1397349967}
   m_Layer: 0
   m_Name: Pat
   m_TagString: Ennemy
@@ -3418,6 +3498,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1397349967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397349960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerVie: {fileID: 0}
 --- !u!1 &1421186442
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,7 +3557,7 @@ GameObject:
   - component: {fileID: 1471093177}
   - component: {fileID: 1471093178}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: CompteurPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3663,6 +3757,7 @@ GameObject:
   - component: {fileID: 1483939388}
   - component: {fileID: 1483939392}
   - component: {fileID: 1483939393}
+  - component: {fileID: 1483939394}
   m_Layer: 0
   m_Name: Mistic
   m_TagString: Ennemy
@@ -3795,6 +3890,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1483939394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483939386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerVie: {fileID: 0}
 --- !u!1 &1565596900
 GameObject:
   m_ObjectHideFlags: 0
@@ -4170,6 +4279,7 @@ GameObject:
   - component: {fileID: 1905865315}
   - component: {fileID: 1905865314}
   - component: {fileID: 1905865313}
+  - component: {fileID: 1905865318}
   m_Layer: 0
   m_Name: Pat (1)
   m_TagString: Ennemy
@@ -4302,6 +4412,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905865311}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1905865318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905865311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerVie: {fileID: 0}
 --- !u!1 &1925068315
 GameObject:
   m_ObjectHideFlags: 0
@@ -4434,6 +4558,7 @@ GameObject:
   - component: {fileID: 1937661932}
   - component: {fileID: 1937661931}
   - component: {fileID: 1937661930}
+  - component: {fileID: 1937661935}
   m_Layer: 0
   m_Name: Dingo (1)
   m_TagString: Ennemy
@@ -4566,6 +4691,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937661928}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1937661935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937661928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerVie: {fileID: 0}
 --- !u!1 &1984782796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4685,6 +4824,7 @@ GameObject:
   - component: {fileID: 2004422350}
   - component: {fileID: 2004422349}
   - component: {fileID: 2004422348}
+  - component: {fileID: 2004422353}
   m_Layer: 0
   m_Name: Pat (2)
   m_TagString: Ennemy
@@ -4817,6 +4957,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2004422346}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2004422353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004422346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  playerVie: {fileID: 0}
 --- !u!1 &2121903550
 GameObject:
   m_ObjectHideFlags: 0
