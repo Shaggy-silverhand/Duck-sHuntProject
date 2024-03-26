@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    int randNum;
-    public GameObject Obj1, Obj2, Obj3;
+    private int randNum;
+    [SerializeField] public GameObject Obj1, Obj2, Obj3;
     // Start is called before the first frame update
     void Start()
     {

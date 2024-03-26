@@ -1,20 +1,22 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnnemyMovement : MonoBehaviour
 {
+    private float speed = 2f;
     ScoreScript ScoreScript;
     // Start is called before the first frame update
     void Start()
     {
-        
+           
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        transform.Translate(speed * Time.deltaTime, 0, 0);
     }
 
 
@@ -23,7 +25,7 @@ public class EnnemyMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Bullet"))
         {
             Destroy(gameObject);
-            ScoreScript.scoreCount += 25;
+            ScoreScript.scoreCount += 10;
             Destroy(other.gameObject);
         }
     }
