@@ -34,7 +34,7 @@ public class PlayerVie : MonoBehaviour
             if (health <= 0)
             {
                 Destroy(gameObject);
-
+                SceneManager.LoadScene("Celyan'Scene");
 
             }
 

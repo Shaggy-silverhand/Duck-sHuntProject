@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnnemyMovement : MonoBehaviour
 {
+    Spawner spawner;
     private float speed = 2f;
     ScoreScript ScoreScript;
     // Start is called before the first frame update
@@ -24,7 +25,7 @@ public class EnnemyMovement : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Bullet"))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             ScoreScript.scoreCount += 10;
             Destroy(other.gameObject);
         }

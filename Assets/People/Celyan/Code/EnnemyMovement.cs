@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class EnnemyMovement2 : MonoBehaviour
 {
+    Spawner spawner;
     private float speed = 3.5f;
     ScoreScript ScoreScript;
     // Start is called before the first frame update
@@ -17,11 +19,14 @@ public class EnnemyMovement2 : MonoBehaviour
     {
         transform.Translate(- speed * Time.deltaTime, 0, 0);
     }
+
+    
     private void OnTriggerEnter(Collider other)
     {
+        
         if (other.gameObject.CompareTag("Bullet"))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             ScoreScript.scoreCount += 25;
             Destroy(other.gameObject);
         }
