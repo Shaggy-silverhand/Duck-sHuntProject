@@ -23,6 +23,7 @@ public class EnnemyMovement1 : MonoBehaviour
         if (other.gameObject.CompareTag("Bullet"))
         {
             gameObject.SetActive(false);
+            //spawner.Desincrementation();
             ScoreScript.scoreCount += 50;
             Destroy(other.gameObject);
         }

@@ -26,8 +26,14 @@ public class EnnemyMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Bullet"))
         {
             gameObject.SetActive(false);
+            Bruh();
             ScoreScript.scoreCount += 10;
             Destroy(other.gameObject);
         }
     }
+    public void Bruh()
+    {
+        spawner.Desincrementation();
+        Debug.Log("Amongus");
+    } 
 }

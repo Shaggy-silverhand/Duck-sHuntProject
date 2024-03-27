@@ -2066,6 +2066,9 @@ MonoBehaviour:
   Obj1: {fileID: 21588746}
   Obj2: {fileID: 2004422346}
   Obj3: {fileID: 1042764945}
+  ennemyMovement: {fileID: 2004422349}
+  ennemyMovement1: {fileID: 1042764947}
+  ennemyMovement2: {fileID: 21588749}
 --- !u!1 &777480592
 GameObject:
   m_ObjectHideFlags: 0
@@ -2314,6 +2317,9 @@ MonoBehaviour:
   Obj1: {fileID: 68597621}
   Obj2: {fileID: 1397349960}
   Obj3: {fileID: 1483939386}
+  ennemyMovement: {fileID: 1397349965}
+  ennemyMovement1: {fileID: 1483939392}
+  ennemyMovement2: {fileID: 68597626}
 --- !u!1 &940296426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2656,6 +2662,9 @@ MonoBehaviour:
   Obj1: {fileID: 1937661928}
   Obj2: {fileID: 1905865311}
   Obj3: {fileID: 53390610}
+  ennemyMovement: {fileID: 1905865314}
+  ennemyMovement1: {fileID: 53390613}
+  ennemyMovement2: {fileID: 1937661931}
 --- !u!1 &973097405
 GameObject:
   m_ObjectHideFlags: 0

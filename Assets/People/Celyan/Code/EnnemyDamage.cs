@@ -15,7 +15,7 @@ public class EnnemyDamage : MonoBehaviour
         {
             Debug.Log("toucher");
             playerVie.TakeDamage(damage);
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
      
     }
