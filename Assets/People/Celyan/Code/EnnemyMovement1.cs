@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnnemyMovement1 : MonoBehaviour
 {
     Spawner spawner;
-    private float speed = 5f;
+    private float speed = 6f;
     ScoreScript ScoreScript;
     // Start is called before the first frame update
     void Start()

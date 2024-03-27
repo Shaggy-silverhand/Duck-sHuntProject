@@ -8,7 +8,7 @@ public class PlayerVie : MonoBehaviour
 {
     void Start()
     {
-        health = maxHealth;
+
     }
     void Update()
     {
@@ -19,8 +19,7 @@ public class PlayerVie : MonoBehaviour
 
     
     [SerializeField] public GameObject[] Heart;
-    [SerializeField] public int maxHealth;
-    [SerializeField] public int health;
+    [SerializeField] public static int health = 3;
 
 
     //UI hearth and health system 
@@ -28,7 +27,7 @@ public class PlayerVie : MonoBehaviour
     {
         if (health < 1)
         {
-            Destroy(Heart[0].gameObject);
+            Heart[0].gameObject.SetActive(false);
 
 
             if (health <= 0)
@@ -41,11 +40,11 @@ public class PlayerVie : MonoBehaviour
         }
         else if (health < 2)
         {
-            Destroy(Heart[1].gameObject);
+            Heart[1].gameObject.SetActive(false);
         }
         else if (health < 3)
         {
-            Destroy(Heart[2].gameObject);
+            Heart[2].gameObject.SetActive(false);
         }
     }
 

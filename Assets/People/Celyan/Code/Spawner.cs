@@ -16,14 +16,16 @@ public class Spawner : MonoBehaviour
         RandomNum();
         Debug.Log(Reloader);
         
+        
     }
 
     private void Update()
     {
-        if (Reloader <= 0)
+        if (Input.GetKeyUp(KeyCode.Space) || Reloader <= 0)
         {
             SceneManager.LoadScene("Celyan'Scene");
         }
+
     }
 
 
