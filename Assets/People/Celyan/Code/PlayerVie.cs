@@ -17,7 +17,7 @@ public class PlayerVie : MonoBehaviour
 
 
 
-
+    
     [SerializeField] public GameObject[] Heart;
     [SerializeField] public int maxHealth;
     [SerializeField] public int health;
