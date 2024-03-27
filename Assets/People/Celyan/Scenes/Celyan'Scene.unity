@@ -196,6 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7c012ac1947fc439e8245b38428952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 972733112}
 --- !u!65 &21588750
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -279,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
   damage: 1
   playerVie: {fileID: 777480601}
 --- !u!1 &31955547
@@ -401,6 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50658f0d8da8f3479720f4741aaa168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
 --- !u!65 &53390614
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -484,6 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
   damage: 1
   playerVie: {fileID: 777480601}
 --- !u!1 &68597621
@@ -606,6 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7c012ac1947fc439e8245b38428952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 972733112}
 --- !u!54 &68597627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -645,6 +650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
   damage: 1
   playerVie: {fileID: 777480601}
 --- !u!1 &134670682
@@ -2063,6 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0d2113539a3334d820cdf08f6ce181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randNum: 0
   Obj1: {fileID: 21588746}
   Obj2: {fileID: 2004422346}
   Obj3: {fileID: 1042764945}
@@ -2309,6 +2316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0d2113539a3334d820cdf08f6ce181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randNum: 0
   Obj1: {fileID: 68597621}
   Obj2: {fileID: 1397349960}
   Obj3: {fileID: 1483939386}
@@ -2651,6 +2659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0d2113539a3334d820cdf08f6ce181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  randNum: 0
   Obj1: {fileID: 1937661928}
   Obj2: {fileID: 1905865311}
   Obj3: {fileID: 53390610}
@@ -2948,6 +2957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50658f0d8da8f3479720f4741aaa168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
 --- !u!65 &1042764948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3046,6 +3056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
   damage: 1
   playerVie: {fileID: 777480601}
 --- !u!1 &1091229458
@@ -3545,6 +3556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a5e591ffa06004688f81e7cc4d69ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 777360900}
 --- !u!54 &1397349966
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3584,6 +3596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
   damage: 1
   playerVie: {fileID: 777480601}
 --- !u!1 &1421186442
@@ -3937,6 +3950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d50658f0d8da8f3479720f4741aaa168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
 --- !u!54 &1483939393
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3976,6 +3990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
   damage: 1
   playerVie: {fileID: 777480601}
 --- !u!1 &1565596900
@@ -4415,6 +4430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a5e591ffa06004688f81e7cc4d69ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 777360900}
 --- !u!65 &1905865315
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4498,6 +4514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
   damage: 1
   playerVie: {fileID: 777480601}
 --- !u!1 &1925068315
@@ -4694,6 +4711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7c012ac1947fc439e8245b38428952, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 972733112}
 --- !u!65 &1937661932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4777,6 +4795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
   damage: 1
   playerVie: {fileID: 777480601}
 --- !u!1 &1984782796
@@ -4960,6 +4979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47a5e591ffa06004688f81e7cc4d69ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 777360900}
 --- !u!65 &2004422350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5043,6 +5063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de44ccc5d3ad1b458b3faedf550b456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawner: {fileID: 808297258}
   damage: 1
   playerVie: {fileID: 777480601}
 --- !u!1 &2121903550

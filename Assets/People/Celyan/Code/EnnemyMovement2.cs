@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnnemyMovement : MonoBehaviour
 {
-    Spawner spawner;
+    [SerializeField] public Spawner spawner;
     private float speed = 3f;
     ScoreScript ScoreScript;
     // Start is called before the first frame update
@@ -26,13 +26,9 @@ public class EnnemyMovement : MonoBehaviour
         if (other.gameObject.CompareTag("Bullet"))
         {
             gameObject.SetActive(false);
+            spawner.Desincrementation();
             ScoreScript.scoreCount += 10;
             Destroy(other.gameObject);
         }
     }
-    /*public void Bruh()
-    {
-        spawner.Desincrementation();
-        Debug.Log("Amongus");
-    } */
 }

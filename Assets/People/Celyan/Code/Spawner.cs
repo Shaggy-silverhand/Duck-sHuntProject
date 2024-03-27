@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
-    private int randNum;
+    public int randNum;
     [SerializeField]public static int Reloader = 0;
     [SerializeField] public GameObject Obj1, Obj2, Obj3;
 
@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour
     }
 
 
-    private void RandomNum()
+    public void RandomNum()
     {
         randNum = Random.Range(0, 3);
         if (randNum == 0)
@@ -60,5 +60,6 @@ public class Spawner : MonoBehaviour
     public void Desincrementation()
     {
         Reloader -= 1;
+        Debug.Log(Reloader);
     }
 }
