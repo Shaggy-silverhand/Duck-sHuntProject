@@ -11,7 +11,7 @@ public class EnnemyMovement2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed += 0.1f;
+        speed += 0.2f;
         Debug.Log(speed);
     }
 
