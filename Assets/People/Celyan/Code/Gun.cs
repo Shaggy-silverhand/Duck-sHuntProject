@@ -15,13 +15,28 @@ public class Gun : MonoBehaviour
 
     public float initialValue = 1;
 
-    void Update()
+    [SerializeField] public Animator GunAnim;
+
+
+    private void FixedUpdate()
     {
+        GunAnim.SetBool("Shoot", false);
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            GunAnim.SetBool("Shoot", true);
+        }
+    }
+    void Update()
+    {
+        
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            
             var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<Rigidbody>().velocity = bulletSpawnPoint.forward * bulletSpeed;
         }
+
+        
 
     }
     
