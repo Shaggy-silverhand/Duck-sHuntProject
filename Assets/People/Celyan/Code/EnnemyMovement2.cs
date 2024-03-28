@@ -6,7 +6,7 @@ using UnityEngine;
 public class EnnemyMovement : MonoBehaviour
 {
     [SerializeField] public Spawner spawner;
-    private float speed = 3f;
+    [SerializeField] public static float speed = 3f;
     ScoreScript ScoreScript;
     // Start is called before the first frame update
     void Start()
